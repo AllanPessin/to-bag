@@ -1,0 +1,313 @@
+* {
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #E5E5E5;
+}
+
+header {
+  position: fixed;
+  top: 0;
+
+  width: 100%;
+  padding: 10px;
+  background-color: #6A82CC;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.container h2 {
+  margin-right: 4.375rem;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+
+h2 > a:hover {
+  text-decoration: underline 2px;
+  text-decoration-color: #FFF;
+}
+
+.name {
+  margin-left: 5.9rem;
+  margin-right: 27.3rem;
+
+  font-weight: bold;
+  font-size: 36px;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+
+  width: 10.45rem;
+  height: 40px;
+
+  background: #5A72BB;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  transition: background-color 0.2s;
+}
+
+.btn-buy {
+  border: 0.5px solid #fceacd;
+}
+
+.btn-explore {
+  border: 0.5px solid #fceacd;
+  border-radius: 20px;
+
+  width: 114px;
+  height: 40px;
+  background: #6A82CC;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+
+  transition: background-color 0.2s;
+}
+
+button:hover { 
+  background: #5569a5;
+  cursor: pointer;
+}
+
+.btn-signup:hover {
+  transform: scale(1.05);
+}
+
+.first-section {
+  width: 100%;
+  height: 518px;
+  /* position: absolute; */
+   
+  display: flex;
+  justify-content: space-between;
+  background-color: #6A82CC;
+}
+
+main {
+  padding-top: 63px;
+}
+
+.presentation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  width: 368px;
+  height: 353px;
+  margin: 68px ;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px 0px 28px;
+}
+
+.content-text {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+
+  margin-left: 1.22rem;
+  height: 254px;
+  padding: 1rem;
+}
+
+.content-text h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+
+  color: #FFFFFF;
+}
+
+.content-text p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #FFFFFF;
+}
+
+.card {
+  display: grid;
+
+  border: 1px solid black; 
+  border-radius: 10px;    
+  background-color: #FFF;
+
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  
+  width: 512px;
+  height: 216px;
+  padding-left: 33px;
+  padding-right: 33px;
+
+  margin: 128px 150px 0px 0px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card h1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
+.content { 
+  display: flex;
+  justify-content: space-between;
+  
+  margin: 33px 0px 0px;
+}
+
+.content input {
+  width: 100%;
+  margin-right: 29px;
+  border-radius: 10px;
+  border: 0.5px solid;
+  outline: 0;
+}
+
+::placeholder{
+  padding-left: 20px
+}
+
+.btn-submit {
+  border: 1px solid black;
+  color: black;
+  background: #FFF;
+}
+
+
+.btn-submit:hover { 
+  background: #FFF;
+  border: 1px solid #5edb79;
+  color: #5edb79;
+  cursor: pointer;
+}
+
+
+footer {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding-top: 1.25rem;
+  height: 2.5rem; 
+  margin-top: 1rem;
+  width: 100%;
+  bottom: 0;
+
+  background-color: #6A82CC;
+}
+
+footer h1 {
+  color: white;
+
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+.second-section {
+  display: flex;
+  justify-content: center;
+}
+
+.product-container {
+  display: flex;
+}
+
+.product-content { 
+  padding: 68px 78px 198px 78px;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 235px);
+  grid-gap: 20px 15px;
+}
+
+.card-items {
+  background-color: #FFF;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-items:hover {
+  border: 1px solid #5edb79;
+  transform: scale(1.05);
+}
+
+.card-items h3{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  margin: 18px;
+
+  color: #000000;
+}
+
+.card-items p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+
+  margin: 18px 0px 23px 0px;
+
+  color: #000000;
+}
+
+.price {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #030303;
+}
+
