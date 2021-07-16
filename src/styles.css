@@ -8,6 +8,8 @@ body {
 }
 
 nav {
+  font-family: "Roboto", sans-serif;
+
   padding-top: 5px;
   display: flex;
   align-items: center;
